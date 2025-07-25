@@ -81,6 +81,9 @@ const Hero = ({ scrollToSection }) => {
           </motion.p>
           <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
             <Button onClick={() => scrollToSection('projects')} size="lg">View Projects</Button>
+            <Button asChild size="lg">
+              <a href="https://drive.google.com/file/d/1TcHZhyfCx8zSSB5EG2RyQPj37zDVfrsJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">View CV</a>
+            </Button>
             <Button variant="outline" onClick={() => scrollToSection('contact')} size="lg">Get In Touch</Button>
           </motion.div>
         </motion.div>
@@ -94,7 +97,7 @@ const Hero = ({ scrollToSection }) => {
         >
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10 rounded-full blur-3xl"></div>
-            <img src="https://storage.googleapis.com/hostinger-horizons-assets-prod/213360d8-fe06-4a75-98f3-847f56f4bc92/3c8fc6b7e2078045a46d80399341975b.jpg" alt="Krish Sahu - Portrait" className="relative z-10 w-80 h-80 object-cover rounded-full border-4 border-white/20" />
+            <img src="https://storage.googleapis.com/hostinger-horizons-assets-prod/213360d8-fe06-4a75-98f3-847f56f4bc92/3c8fc6b7e2078045a46d80399341975b.jpg" alt="Krish Sahu - Portrait" className="relative z-10 w-[28rem] h-[28rem] object-cover rounded-full border-4 border-white/20" />
           </div>
         </motion.div>
       </div>

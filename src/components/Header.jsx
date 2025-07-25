@@ -19,7 +19,7 @@ const Header = ({ isDark, toggleTheme, scrollToSection }) => {
   ];
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <header className="relative w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <motion.div
           onHoverStart={() => setIsNameHovered(true)}
@@ -42,9 +42,14 @@ const Header = ({ isDark, toggleTheme, scrollToSection }) => {
 
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map(link => (
-            <button key={link.id} onClick={() => scrollToSection(link.id)} className="hover:text-primary transition-colors">
+            <Button
+              key={link.id}
+              onClick={() => scrollToSection(link.id)}
+              className="rounded-full px-6 py-2 text-base font-bold bg-gradient-to-r from-[#232526] via-[#414345] to-[#232526] text-white hover:bg-white hover:text-black border-2 border-white/80 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-black focus:ring-opacity-80 drop-shadow-[0_0_12px_#000] mx-1"
+              style={{ boxShadow: '0 0 12px 2px #000, 0 0 24px 4px #000a' }}
+            >
               {link.label}
-            </button>
+            </Button>
           ))}
         </div>
 

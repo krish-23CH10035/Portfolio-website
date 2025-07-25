@@ -120,6 +120,56 @@ html {
   100% { transform: translateX(-100%); }
 }
 
+.neon-grey-bg {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  box-shadow: 0 0 32px 8px #bcbcbc55, 0 0 64px 16px #bcbcbc33;
+  border-radius: 1.5rem;
+  border: 1px solid #bcbcbc33;
+  position: relative;
+  z-index: 1;
+}
+
+.modal-dark {
+  background: linear-gradient(135deg, #181a1b 80%, #232526 100%);
+  color: #f3f3f3;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 32px 8px #000a, 0 0 64px 16px #232526cc;
+}
+
+.modal-dark input,
+.modal-dark textarea {
+  background: #232526;
+  color: #f3f3f3;
+  border: 1.5px solid #444;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.modal-dark input:focus,
+.modal-dark textarea:focus {
+  border: 1.5px solid #a1a1aa;
+  box-shadow: 0 0 8px 2px #a1a1aa55;
+  outline: none;
+}
+
+.modal-dark button[type="submit"] {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 16px 2px #23252699;
+  margin-top: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.modal-dark button[type="submit"]:hover {
+  background: #fff;
+  color: #232526;
+}
+
 @media (max-width: 768px) {
   .cursor-glow {
     display: none;
